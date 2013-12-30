@@ -25,6 +25,8 @@ if [ ! -z "$1" ]; then
 else
   if [ -f "$HOME/.bash_profile" ]; then
 	PROFILE="$HOME/.bash_profile"
+  elif [ -f "$HOME/.bashrc" ]; then
+  	PROFILE="$HOME/.bashrc"
   elif [ -f "$HOME/.zshrc" ]; then
   	PROFILE="$HOME/.zshrc"
   elif [ -f "$HOME/.profile" ]; then
